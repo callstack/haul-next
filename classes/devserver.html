@@ -1,0 +1,488 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DevServer | react-native-webpack-toolkit</title>
+	<meta name="description" content="Documentation for react-native-webpack-toolkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">react-native-webpack-toolkit</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">react-native-webpack-toolkit</a>
+				</li>
+				<li>
+					<a href="devserver.html">DevServer</a>
+				</li>
+			</ul>
+			<h1>Class DevServer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Class for setting up and running development server for React Native application.
+						It&#39;s usually created by the <a href="devserverplugin.html">DevServerPlugin</a>.</p>
+					</div>
+					<p>Each <code>DevServer</code> instance is platform-specific, for example for <code>ios</code> and <code>android</code> platforms,
+						you need 2 <code>DevServer</code> running (on different ports). Alternatively you can
+					use <a href="devserverproxy.html">DevServerProxy</a> to spawn new processes with Webpack compilations for each platform.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="basedevserver.html" class="tsd-signature-type" data-tsd-kind="Class">BaseDevServer</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DevServer</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="devserver.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#fastify" class="tsd-kind-icon">fastify</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="devserver.html#hmrserver" class="tsd-kind-icon">hmr<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="devserver.html#symbolicator" class="tsd-kind-icon">symbolicator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="devserver.html#wdm" class="tsd-kind-icon">wdm</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#wsclientserver" class="tsd-kind-icon">ws<wbr>Client<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#wsdebuggerserver" class="tsd-kind-icon">ws<wbr>Debugger<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#wseventsserver" class="tsd-kind-icon">ws<wbr>Events<wbr>Server</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="devserver.html#wsmessageserver" class="tsd-kind-icon">ws<wbr>Message<wbr>Server</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="devserver.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="devserver.html#setup" class="tsd-kind-icon">setup</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="devserver.html#getloggeroptions" class="tsd-kind-icon">get<wbr>Logger<wbr>Options</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Dev<wbr>Server<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../interfaces/devserverconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">DevServerConfig</a>, compiler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Compiler</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="devserver.html" class="tsd-signature-type" data-tsd-kind="Class">DevServer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L55">src/server/DevServer.ts:55</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs new <code>DevServer</code> instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <a href="../interfaces/devserverconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">DevServerConfig</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Configuration options.</p>
+									</div>
+								</li>
+								<li>
+									<h5>compiler: <span class="tsd-signature-type">Compiler</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Webpack compiler instance.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="devserver.html" class="tsd-signature-type" data-tsd-kind="Class">DevServer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/basedevserverconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseDevServerConfig</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#config">config</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L28">src/server/BaseDevServer.ts:28</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Configuration options.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="fastify" class="tsd-anchor"></a>
+					<h3>fastify</h3>
+					<div class="tsd-signature tsd-kind-icon">fastify<span class="tsd-signature-symbol">:</span> <a href="../modules.html#fastifydevserver" class="tsd-signature-type" data-tsd-kind="Type alias">FastifyDevServer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#fastify">fastify</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L31">src/server/BaseDevServer.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Fastify instance.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="hmrserver" class="tsd-anchor"></a>
+					<h3>hmr<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">hmr<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="websockethmrserver.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketHMRServer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L53">src/server/DevServer.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>HMR WebSocket server instance to allow HMR clients to receive updates.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="symbolicator" class="tsd-anchor"></a>
+					<h3>symbolicator</h3>
+					<div class="tsd-signature tsd-kind-icon">symbolicator<span class="tsd-signature-symbol">:</span> <a href="symbolicator.html" class="tsd-signature-type" data-tsd-kind="Class">Symbolicator</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L55">src/server/DevServer.ts:55</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Symbolicator instance to transform stack traces using Source Maps.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="wdm" class="tsd-anchor"></a>
+					<h3>wdm</h3>
+					<div class="tsd-signature tsd-kind-icon">wdm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebpackDevMiddleware</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L51">src/server/DevServer.ts:51</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><a href="https://github.com/webpack/webpack-dev-middleware">webpack-dev-middleware</a> instance.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="wsclientserver" class="tsd-anchor"></a>
+					<h3>ws<wbr>Client<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">ws<wbr>Client<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="websocketdevclientserver.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketDevClientServer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#wsclientserver">wsClientServer</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L39">src/server/BaseDevServer.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Server instance for React Native clients.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="wsdebuggerserver" class="tsd-anchor"></a>
+					<h3>ws<wbr>Debugger<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">ws<wbr>Debugger<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="websocketdebuggerserver.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketDebuggerServer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#wsdebuggerserver">wsDebuggerServer</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L33">src/server/BaseDevServer.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Debugger server instance.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="wseventsserver" class="tsd-anchor"></a>
+					<h3>ws<wbr>Events<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">ws<wbr>Events<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="websocketeventsserver.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketEventsServer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#wseventsserver">wsEventsServer</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L37">src/server/BaseDevServer.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Events server instance.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="wsmessageserver" class="tsd-anchor"></a>
+					<h3>ws<wbr>Message<wbr>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">ws<wbr>Message<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="websocketmessageserver.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketMessageServer</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#wsmessageserver">wsMessageServer</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/BaseDevServer.ts#L35">src/server/BaseDevServer.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Message server instance.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="run" class="tsd-anchor"></a>
+					<h3>run</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#run">run</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L168">src/server/DevServer.ts:168</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Runs development server.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setup" class="tsd-anchor"></a>
+					<h3>setup</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">setup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="basedevserver.html">BaseDevServer</a>.<a href="basedevserver.html#setup">setup</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L136">src/server/DevServer.ts:136</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets up Fastify plugins and routes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getloggeroptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Logger<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Logger<wbr>Options<span class="tsd-signature-symbol">(</span>compiler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Compiler</span>, platform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/devserverloggeroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DevServerLoggerOptions</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/18ea4ac/src/server/DevServer.ts#L31">src/server/DevServer.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>compiler: <span class="tsd-signature-type">Compiler</span></h5>
+								</li>
+								<li>
+									<h5>platform: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/devserverloggeroptions.html" class="tsd-signature-type" data-tsd-kind="Interface">DevServerLoggerOptions</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="devserver.html" class="tsd-kind-icon">Dev<wbr>Server</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="devserver.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#fastify" class="tsd-kind-icon">fastify</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="devserver.html#hmrserver" class="tsd-kind-icon">hmr<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="devserver.html#symbolicator" class="tsd-kind-icon">symbolicator</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="devserver.html#wdm" class="tsd-kind-icon">wdm</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#wsclientserver" class="tsd-kind-icon">ws<wbr>Client<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#wsdebuggerserver" class="tsd-kind-icon">ws<wbr>Debugger<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#wseventsserver" class="tsd-kind-icon">ws<wbr>Events<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="devserver.html#wsmessageserver" class="tsd-kind-icon">ws<wbr>Message<wbr>Server</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="devserver.html#run" class="tsd-kind-icon">run</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="devserver.html#setup" class="tsd-kind-icon">setup</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="devserver.html#getloggeroptions" class="tsd-kind-icon">get<wbr>Logger<wbr>Options</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

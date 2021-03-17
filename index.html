@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>react-native-webpack-toolkit</title>
+	<meta name="description" content="Documentation for react-native-webpack-toolkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">react-native-webpack-toolkit</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>react-native-webpack-toolkit</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 align="center">react-native-webpack-toolkit</h1>
+				<p align="center">
+					A Webpack-based toolkit to build your React Native application with full support of Webpack ecosystem.
+				</p>
+				<hr>
+				<p><a href="#installation--setup"><img src="https://img.shields.io/badge/go%20to-Installation-blue?style=flat-square" alt="Go to: Installation"></a>
+					<a href="#usage"><img src="https://img.shields.io/badge/go%20to-Usage-blue?style=flat-square" alt="Go to: Usage"></a>
+				<a href="https://callstack.github.io/react-native-webpack-toolkit/"><img src="https://img.shields.io/badge/go%20to-API%20docs-blue?style=flat-square" alt="Go to: Usage"></a></p>
+				<p><a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/go%20to-CONTRIBUTING.md-blue?style=flat-square" alt="Go to: Usage"></a>
+				<a href="./ARCHITECTURE.md"><img src="https://img.shields.io/badge/go%20to-ARCHITECTURE.md-blue?style=flat-square" alt="Go to: Usage"></a></p>
+				<p><a href="https://github.com/callstack/react-native-webpack-toolkit/actions/workflows/main.yml"><img src="https://img.shields.io/github/workflow/status/callstack/react-native-webpack-toolkit/CI/main?style=flat-square" alt="Build Status"></a>
+					<a href="https://www.npmjs.com/package/react-native-webpack-toolkit"><img src="https://img.shields.io/npm/v/react-native-webpack-toolkit?style=flat-square" alt="Version"></a>
+					<a href="https://github.com/callstack/react-native-webpack-toolkit/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-webpack-toolkit.svg?style=flat-square" alt="MIT License"></a>
+					<a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+				<a href="https://github.com/callstack/react-native-webpack-toolkit/blob/master/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square" alt="Code of Conduct"></a></p>
+				<p><code>react-native-webpack-toolkit</code> is a next generation of <a href="https://github.com/callstack/haul">Haul</a> — a Webpack-based bundler for React Native applications.</p>
+				<p><code>react-native-webpack-toolkit</code> uses Webpack 5 and React Native CLI&#39;s plugin system to allow you to bundle your application using Webpack and allow to easily switch from Metro.</p>
+				<p><strong>Check the base <a href="./templates/webpack.config.js"><code>webpack.config.js</code></a> template, if you&#39;re curious how it all looks like.</strong></p>
+				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+					<h2>Features</h2>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Webpack ecosystem, plugins and utilities</li>
+					<li><input checked="" disabled="" type="checkbox"> Build production bundle for iOS, Android and out-of-tree platforms</li>
+					<li><input checked="" disabled="" type="checkbox"> Build development bundle for iOS, Android and out-of-tree platforms</li>
+					<li><input checked="" disabled="" type="checkbox"> Development server with Remote JS Debugging, Source Map symbolication and HMR support</li>
+					<li><input checked="" disabled="" type="checkbox"> Hot Module Replacement + React Refresh support</li>
+					<li><input checked="" disabled="" type="checkbox"> Reloading application from CLI</li>
+					<li><input checked="" disabled="" type="checkbox"> Flipper support (tested features: Crash Reporter, Logs, Layout, Network, React DevTools with caveat <a href="https://github.com/facebook/react/issues/20377">facebook/react#20377</a>)</li>
+				</ul>
+				<a href="#planned-features" id="planned-features" style="color: inherit; text-decoration: none;">
+					<h3>Planned features</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Missing Flipper features support (working HMR/React Refresh with React DevTools, Images and Databases) </li>
+					<li><input disabled="" type="checkbox"> Hermes support</li>
+					<li><input disabled="" type="checkbox"> <code>webpack-init</code> command</li>
+					<li><input disabled="" type="checkbox"> Web dashboard with logs, compilation statues, bundle explorer, visualizations and more</li>
+					<li><input disabled="" type="checkbox"> Asynchronous chunks</li>
+					<li><input disabled="" type="checkbox"> Tighter integration with React Native CLI</li>
+					<li><input disabled="" type="checkbox"> <a href="https://medium.com/swlh/webpack-5-module-federation-a-game-changer-to-javascript-architecture-bcdd30e02669">Module Federation</a> support</li>
+				</ul>
+				<a href="#why-amp-when" id="why-amp-when" style="color: inherit; text-decoration: none;">
+					<h2>Why &amp; when</h2>
+				</a>
+				<p>The main feature of <code>react-native-webpack-toolkit</code> is Webpack and its ecosystem of loaders, plugins and support for various features like symlinks, aliases etc. However, because <code>react-native-webpack-toolkit</code> is based on Webpack, it is targeted towards advanced users who already know how to use Webpack and want to leverage Webpack ecosystem.</p>
+				<p>If you&#39;re just starting with React Native, it&#39;s better to stick with the default solution — Metro, since you probably won&#39;t benefit much from switching to Webpack.</p>
+				<a href="#design-goals" id="design-goals" style="color: inherit; text-decoration: none;">
+					<h2>Design goals</h2>
+				</a>
+				<ol>
+					<li><code>react-native-webpack-toolkit</code> was design for the advanced users, as such it exposes <em>low-level API</em> in form of Webpack plugins and utilities, meaning we only give you the tools you need to build React Native application, but the actual configuration and maintenance of said config is on your shoulders.</li>
+					<li>To support wide variety of use cases and give you as much control as possible, <code>react-native-webpack-toolkit</code> is written to allow you to bundle and run development server directly from Webpack CLI as well by using React Native CLI. You can pick one you want to go with.</li>
+					<li>Based on our experience with <a href="https://github.com/callstack/haul">Haul</a>, we shift as much responsibility onto you as possible, so that we can develop features, move at reasonable pace and reduce maintenance cost. Therefor, <code>react-native-webpack-toolkit</code> should be used by seasoned React Native developers with at least basic experience with Webpack.</li>
+					<li><strong>[Future]</strong> We plan to use <code>react-native-webpack-toolkit</code> as a foundation for bringing multi-bundle support to React Native, by allowing you to use asynchronous chunks and finally Webpack 5 latest feature — <a href="https://medium.com/swlh/webpack-5-module-federation-a-game-changer-to-javascript-architecture-bcdd30e02669">Module Federation</a>.</li>
+				</ol>
+				<a href="#react-native-webpack-toolkit-vs-metro" id="react-native-webpack-toolkit-vs-metro" style="color: inherit; text-decoration: none;">
+					<h2><code>react-native-webpack-toolkit</code> vs Metro</h2>
+				</a>
+				<p>Both Metro and <code>react-native-webpack-toolkit</code> have different approaches for the similar problem — bundling JavaScript code for your React Native application, where Metro is custom-built solution and <code>react-native-webpack-toolkit</code> uses Webpack. As a result there few differences that you should consider when deciding the solution to use:</p>
+				<ul>
+					<li>Metro is slightly faster, since it has less overhead compared to Webpack, and it&#39;s configuration options, plugin and loader system.</li>
+					<li>Webpack configuration options and ecosystem allows for much greater control and support for advanced use-cases.</li>
+					<li>Metro&#39;s Fast Refresh is slightly more flexible compared to Webpack&#39;s solution: Hot Module Replacement + React Refresh — some cases require full application reloaded with <code>react-native-webpack-toolkit</code>, but they are supported with Metro See: <a href="#known-issues">Known issues</a>.</li>
+				</ul>
+				<a href="#react-native-webpack-toolkit-vs-haul" id="react-native-webpack-toolkit-vs-haul" style="color: inherit; text-decoration: none;">
+					<h2><code>react-native-webpack-toolkit</code> vs Haul</h2>
+				</a>
+				<p><code>react-native-webpack-toolkit</code> is a direct successor to <a href="https://github.com/callstack/haul">Haul</a>. Therefore we took the experience we gained with Haul while making rather major changes in the approach:</p>
+				<ul>
+					<li><code>react-native-webpack-toolkit</code> has smaller footprint and allows for greater level of customization, since you have access to the Webpack config.</li>
+					<li><code>react-native-webpack-toolkit</code> supports Hot Module Replacement + React Refresh, whereas Haul does not.</li>
+					<li><code>react-native-webpack-toolkit</code> doesn&#39;t support any kind of multi-bundling <strong>yet</strong>, whereas Haul supports legacy implementation of multi-bundling (though it requires to alter React Native source code, so we don&#39;t recommend that).</li>
+					<li><code>react-native-webpack-toolkit</code> delivers better Developer Experience by providing you with more meaningful logs, easier usage and more customizability.</li>
+				</ul>
+				<a href="#installation-amp-setup" id="installation-amp-setup" style="color: inherit; text-decoration: none;">
+					<h2>Installation &amp; setup</h2>
+				</a>
+				<ol>
+					<li>Install <code>react-native-webpack-toolkit</code> dependency:</li>
+				</ol>
+				<pre><code class="language-bash"><span style="color: #000000">npm i -D react-native-webpack-toolkit</span>
+<span style="color: #008000"># or</span>
+<span style="color: #000000">yarn add -D react-native-webpack-toolkit</span>
+</code></pre>
+				<ol start="2">
+					<li>Create <code>webpack.config.js</code> based on the <a href="./templates/webpack.config.js">template</a>.</li>
+					<li>Configure XCode/Gradle to use <code>webpack-bundle</code>/<code>webpack-start</code> commands:<ul>
+							<li>XCode: Add <code>export BUNDLE_COMMAND=webpack-bundle</code> to <strong><em>Bundle React Native code and images</em></strong> phase inside <strong><em>Build Phases</em></strong> in your project XCode config. The final phase should look similar to:<pre><code class="language-bash"><span style="color: #0000FF">export</span><span style="color: #000000"> NODE_BINARY=node</span>
+<span style="color: #0000FF">export</span><span style="color: #000000"> BUNDLE_COMMAND=webpack-bundle</span>
+<span style="color: #000000">../node_modules/react-native/scripts/react-native-xcode.sh</span>
+</code></pre>
+							</li>
+							<li>Gradle: Add <code>bundleCommand: &quot;webpack-bundle&quot;</code> setting to <code>project.ext.react</code> inside <code>android/app/build.gradle</code> file, so it looks similar to:<pre><code class="language-groovy"><span style="color: #000000">project.ext.react = [</span>
+<span style="color: #000000">    enableHermes: </span><span style="color: #0000FF">false</span><span style="color: #000000">,  </span><span style="color: #008000">// clean and rebuild if changing</span>
+<span style="color: #000000">    bundleCommand: </span><span style="color: #A31515">&quot;webpack-bundle&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    bundleInDebug: </span><span style="color: #0000FF">false</span>
+<span style="color: #000000">]</span>
+</code></pre>
+							</li>
+						</ul>
+					</li>
+					<li>Now you can build your app for production or run development server with <code>npx react-native webpack-start</code> and develop your app.</li>
+				</ol>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<p>Once you&#39;ve completed <a href="#installation--setup">Installation &amp; setup</a> you can:</p>
+				<ul>
+					<li>Build your application for production using XCode/Android Studio/Gradle/Fastlane or whichever tool you use.</li>
+					<li>Develop your application by starting development server with <code>npx react-native webpack-start</code>.</li>
+					<li>Create JavaScript bundle only by running <code>npx react-native webpack-bundle</code>.</li>
+					<li>Create JavaScript bundle or start development server with Webpack CLI by running <code>npx webpack-cli -c webpack.config.js</code>.</li>
+				</ul>
+				<a href="#api-documentation" id="api-documentation" style="color: inherit; text-decoration: none;">
+					<h2>API documentation</h2>
+				</a>
+				<p>The API documentation is available at <a href="https://callstack.github.io/react-native-webpack-toolkit/">https://callstack.github.io/react-native-webpack-toolkit/</a></p>
+				<a href="#known-issues" id="known-issues" style="color: inherit; text-decoration: none;">
+					<h2>Known issues</h2>
+				</a>
+				<a href="#hot-module-replacement--react-refresh" id="hot-module-replacement--react-refresh" style="color: inherit; text-decoration: none;">
+					<h3>Hot Module Replacement / React Refresh</h3>
+				</a>
+				<a href="#1-root-component-used-by-appregistryregistercomponent-will-always-require-full-reload" id="1-root-component-used-by-appregistryregistercomponent-will-always-require-full-reload" style="color: inherit; text-decoration: none;">
+					<h4>1. Root component used by <code>AppRegistry.registerComponent</code> will always require full reload.</h4>
+				</a>
+				<p>With Webpack&#39;s Hot Module Replacement, the modules don&#39;t refresh themselves, but their parents refresh them, meaning for components <code>A</code> -&gt; <code>B</code> (<code>A</code> renders <code>B</code>),
+				if you edit <code>B</code>, the component <code>A</code> will refresh <code>B</code>, but if you edit component <code>A</code> there&#39;s no one to refresh <code>A</code>.</p>
+				<p>The easiest workaround it create additional component that will simply render your previous root component, eg:</p>
+				<pre><code class="language-js"><span style="color: #008000">// --- index.js -------------------------------------------</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">React</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;react&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">App</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;./App&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// Your new root component, make sure it&#039;s exported!</span>
+<span style="color: #008000">// Editing `Root` will result in full page reload`</span>
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">Root</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #800000">&lt;</span><span style="color: #267F99">App</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #001080">AppRegistry</span><span style="color: #000000">.</span><span style="color: #795E26">registerComponent</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;AppName&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">Root</span><span style="color: #000000">);</span>
+
+<span style="color: #008000">// --- App.js ---------------------------------------------</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">React</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;react&#039;</span><span style="color: #000000">;</span>
+<span style="color: #008000">// -- snip --</span>
+
+<span style="color: #008000">// `Root` will refresh `App` so HMR wll work as expected.</span>
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">App</span><span style="color: #000000">() {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// -- snip --</span>
+<span style="color: #000000">}</span>
+
+</code></pre>
+				<a href="#2-stack-traces-are-different-after-hot-module-replacement-update" id="2-stack-traces-are-different-after-hot-module-replacement-update" style="color: inherit; text-decoration: none;">
+					<h4>2. Stack traces are different after Hot Module Replacement update.</h4>
+				</a>
+				<p>After applying Hot Module replacement update, if the error is throw or <code>console.log</code>/<code>console.error</code> is called,
+				the stack trace that React Native prints will be different — less precise — compared to running the same code after a full reload.</p>
+				<p>It&#39;s because HMR updates (which can consist of multiple files and runtime logic) created by Webpack
+					have to evaluated at once, so it&#39;s impossible for the JavaScript engine to identify from which file each pice of code from HMR update is.
+				Instead it will fallback to the name of the file that evaluated the update — <code>WebpackHMRClient.ts</code>.</p>
+				<p>This expected and there&#39;s little we can do about it. The stack trace is still correct, but it&#39;s less precise.</p>
+				<p>If you encounter such situation, and you need to get the precise stack trace, you can do a full reload
+				and reproduce the error or <code>console.log</code>/<code>console.error</code> call.</p>
+				<a href="#3-react-devtools-don39t-work-with-hot-module-replacement--react-refresh" id="3-react-devtools-don39t-work-with-hot-module-replacement--react-refresh" style="color: inherit; text-decoration: none;">
+					<h4>3. React DevTools don&#39;t work with Hot Module Replacement / React Refresh</h4>
+				</a>
+				<p>The issue was reported here: <a href="https://github.com/facebook/react/issues/20377">facebook/react#20377</a>. Because we use similar solutions to implement React Refresh, we are affected by the same issue.</p>
+				<p>For now the workaround is to temporarily disable HMR when debugging with Flipper or React DevTools, then switching it back when Flipper/React DevTools are disconnected.</p>
+				<a href="#made-with-❤️-at-callstack" id="made-with-❤️-at-callstack" style="color: inherit; text-decoration: none;">
+					<h2>Made with ❤️ at Callstack</h2>
+				</a>
+				<p><code>react-native-webpack-toolkit</code> is an open source project and will always remain free to use. If you think it&#39;s cool, please star it 🌟. <a href="https://callstack.com/?utm_source=github.com&amp;utm_medium=referral&amp;utm_campaign=react-native-paper&amp;utm_term=readme-with-love">Callstack</a> is a group of React and React Native geeks, contact us at <a href="mailto:hello@callstack.com">hello@callstack.com</a> if you need any help with these or just want to say hi!</p>
+				<!-- badges -->
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/basedevserver.html" class="tsd-kind-icon">Base<wbr>Dev<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/devserver.html" class="tsd-kind-icon">Dev<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/devserverplugin.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/devserverproxy.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/javascriptloosemodeplugin.html" class="tsd-kind-icon">Java<wbr>Script<wbr>Loose<wbr>Mode<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/loggerplugin.html" class="tsd-kind-icon">Logger<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/reactnativeassetsplugin.html" class="tsd-kind-icon">React<wbr>Native<wbr>Assets<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/reactnativetargetplugin.html" class="tsd-kind-icon">React<wbr>Native<wbr>Target<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/reporter.html" class="tsd-kind-icon">Reporter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/symbolicator.html" class="tsd-kind-icon">Symbolicator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketdebuggerserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Debugger<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketdevclientserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Dev<wbr>Client<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketeventsserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Events<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websockethmrserver.html" class="tsd-kind-icon">Web<wbr>SocketHMRServer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketmessageserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Message<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/websocketserver.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/basedevserverconfig.html" class="tsd-kind-icon">Base<wbr>Dev<wbr>Server<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/bundlearguments.html" class="tsd-kind-icon">Bundle<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/clioptions.html" class="tsd-kind-icon">Cli<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/codeframe.html" class="tsd-kind-icon">Code<wbr>Frame</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commonarguments.html" class="tsd-kind-icon">Common<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilerworker.html" class="tsd-kind-icon">Compiler<wbr>Worker</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/devserverconfig.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/devserverloggeroptions.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Logger<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/devserveroptions.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/devserverpluginconfig.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Plugin<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/devserverproxyconfig.html" class="tsd-kind-icon">Dev<wbr>Server<wbr>Proxy<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/eventmessage.html" class="tsd-kind-icon">Event<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fallbackwebpackoptions.html" class="tsd-kind-icon">Fallback<wbr>Webpack<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hmrmessage.html" class="tsd-kind-icon">HMRMessage</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hmrmessagebody.html" class="tsd-kind-icon">HMRMessage<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/initializationentriesoptions.html" class="tsd-kind-icon">Initialization<wbr>Entries<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/inputstackframe.html" class="tsd-kind-icon">Input<wbr>Stack<wbr>Frame</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/javascriptloosemodepluginconfig.html" class="tsd-kind-icon">Java<wbr>Script<wbr>Loose<wbr>Mode<wbr>Plugin<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/logentry.html" class="tsd-kind-icon">Log<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/loggerpluginconfig.html" class="tsd-kind-icon">Logger<wbr>Plugin<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parseclioptionsconfig.html" class="tsd-kind-icon">Parse<wbr>Cli<wbr>Options<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reactnativeassetspluginconfig.html" class="tsd-kind-icon">React<wbr>Native<wbr>Assets<wbr>Plugin<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reactnativeidobject.html" class="tsd-kind-icon">React<wbr>Native<wbr>IdObject</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reactnativemessage.html" class="tsd-kind-icon">React<wbr>Native<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reactnativestackframe.html" class="tsd-kind-icon">React<wbr>Native<wbr>Stack<wbr>Frame</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reporterconfig.html" class="tsd-kind-icon">Reporter<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/stackframe.html" class="tsd-kind-icon">Stack<wbr>Frame</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/startarguments.html" class="tsd-kind-icon">Start<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/symbolicatorresults.html" class="tsd-kind-icon">Symbolicator<wbr>Results</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/websocketeventsserverconfig.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Events<wbr>Server<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/websockethmrserverconfig.html" class="tsd-kind-icon">Web<wbr>SocketHMRServer<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webpackoptions.html" class="tsd-kind-icon">Webpack<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/webpackplugin.html" class="tsd-kind-icon">Webpack<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#devserverreply" class="tsd-kind-icon">Dev<wbr>Server<wbr>Reply</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#devserverrequest" class="tsd-kind-icon">Dev<wbr>Server<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#fastifydevserver" class="tsd-kind-icon">Fastify<wbr>Dev<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#genericfilter" class="tsd-kind-icon">Generic<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#logtype" class="tsd-kind-icon">Log<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#optionalwebpackoptions" class="tsd-kind-icon">Optional<wbr>Webpack<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#webpacklogger" class="tsd-kind-icon">Webpack<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#webpackoptionswithoutplatform" class="tsd-kind-icon">Webpack<wbr>Options<wbr>Without<wbr>Platform</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#default_fallback" class="tsd-kind-icon">DEFAULT_<wbr>FALLBACK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#default_port" class="tsd-kind-icon">DEFAULT_<wbr>PORT</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bundle" class="tsd-kind-icon">bundle</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getinitializationentries" class="tsd-kind-icon">get<wbr>Initialization<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#getresolveoptions" class="tsd-kind-icon">get<wbr>Resolve<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#parseclioptions" class="tsd-kind-icon">parse<wbr>Cli<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#start" class="tsd-kind-icon">start</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
